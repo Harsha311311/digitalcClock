@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./digitalclock.css">
+    <script src="./digitalclock.js" defer></script>
+</head>
+<body onload="dateoutput(); bgImage()" id="a">
+    <div id="toggle">
+      <input type="button" id="button" onclick="toggleButton()">
+    </div>
+    <div id="containerClock">
+        <div id="hrContainer">
+            <h1 id="hours12"></h1>
+            <h1 id="hours24"></h1>
+        </div>
+            <h1 id="date"></h1>
+            <h1 id="day"></h1>
+    </div>
+    <h1 id="sec"></h1>
+    <div id="containerAlarm">
+        <span id="close" onclick="closeAlarmWindow()"></span>
+        <input class="inp" type="date" oninput="userData()">
+        <input type="inp" type="time" oninput="userData()">
+        
+    </div>
+
+
+
+
+
+
+</body>
+</html>

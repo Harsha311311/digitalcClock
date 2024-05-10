@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./otp.css">
+    <script src="./otp.js" defer></script>
+</head>
+<body>
+    <form>
+        <div id="collectTheOtp">
+            <input id="enterOtp" type="text">
+            <input id="subotp" type="button" value="Submit Otp" onclick="otpAccess()">
+            <input id="genotp" type="button" value="Generate Otp" onclick="showOtpLayout(),otpGen()">
+            <p id="status"></p>
+        </div>
+    </form>
+    <div id="otpLayout">
+        <span onclick="closeOtpLayout()">+</span>
+        <h1 id="otp">4561</h1>
+    </div>
+</body>
+</html>

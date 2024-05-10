@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(75deg,orange,deeppink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#collectTheOtp,#otpLayout{
+    width: 35vw;
+    height: 25vw;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+input{
+    width: 80%;
+    height: 4vw;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 2vw;
+    letter-spacing: 1vw;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    cursor: pointer;
+}
+#subotp{
+    background-color: lawngreen;
+    transition: all 0.5s;
+}
+#subotp:hover{
+    background-color: rgb(66,132,0);
+    transform: scale(1.1);
+}
+#genotp{
+    background-color: royalblue;
+    transition: all 0.5s;
+}
+#genotp:hover{
+    background-color:rgb(0,34,136);
+     transform: scale(1.1);
+}
+#enterOtp{
+    color: black;
+    text-align: center;
+    font-size: 2.2vw;
+    letter-spacing: 0.5vw;
+    cursor: text;
+}
+#otpLayout{
+    position: absolute;
+    color: white;
+    background-color: rgb(0,0,0,0.581);
+    backdrop-filter: blur(10px);
+    display: none;
+}
+span{
+    font-size: 34px;
+    rotate: 45deg;
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+span:hover{
+    rotate: 405deg;
+    transform: scale(1.5);
+}
+#otp{
+    letter-spacing: 2vw;
+    cursor: none;
+}
+#otp::selection{
+    display: none;
+}
